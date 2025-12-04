@@ -13,7 +13,7 @@ Photometric Stereo(PS)로 얻은 Normal Map과 Autoencoder(AE)를 이용해
 >
 > **`checkpoints/autoencoder/` 디렉토리 안에 저장하여 실행을 진행해 주세요.**
 >
-> [🔗 **Download best_model_epoch_100.pth** ](https://buly.kr/FAebWyP)
+> [🔗 Download best_model_epoch_100.pth](https://buly.kr/FAebWyP)
 
 
 ---
