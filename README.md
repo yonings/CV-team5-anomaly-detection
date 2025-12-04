@@ -217,9 +217,9 @@ pip install -r requirements.txt
 ```
 #### 🛠 필요 환경
 
-- Python 3.x  
+- Python 3.x (권장: Python 3.9 이상)
 - PyTorch, torchvision  
-- numpy, matplotlib, scikit-learn, gradio 등
+- numpy, matplotlib, scikit-learn, gradio, gdown 등
 
 
 ### 2️⃣ Dataset Preparation
