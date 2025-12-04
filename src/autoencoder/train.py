@@ -25,14 +25,14 @@ def train_autoencoder(
     UNet 기반 AutoEncoder 학습 함수.
 
     Args:
-        data_dir: 'N_*.npy'가 들어있는 폴더 경로
+        dataset: torch.utils.data.Dataset 객체 (이미 만들어진 Dataset)
         learning_rate: 학습률
         batch_size: 배치 크기
         epochs: 에폭 수
         val_split: 검증 데이터 비율 (0~1)
         num_workers: DataLoader num_workers
         model_save_path: 베스트 모델 저장 경로
-        loss_fn: "mse" 또는 "l1"
+        loss_fn: "mse"
         device: torch.device (None이면 자동 선택)
 
     Returns:
@@ -69,7 +69,7 @@ def train_autoencoder(
     model = UNet(n_channels=3, n_classes=3).to(device)
 
     optimizer = optim.AdamW(model.parameters(), lr=learning_rate)
-    print("optimizer] AdamW 사용 (lr={LEARNING_RATE})")
+    print(f"optimizer] AdamW 사용 (lr={learning_rate})")
     
     criterion = nn.MSELoss()
     print("[Loss] MSELoss 사용")
@@ -84,7 +84,7 @@ def train_autoencoder(
         model.train()
         train_loss = 0.0
 
-        for images in train_loader:
+        for images,_ in train_loader:
             images = images.to(device)
 
             optimizer.zero_grad()
@@ -102,7 +102,7 @@ def train_autoencoder(
         model.eval()
         val_loss = 0.0
         with torch.no_grad():
-            for images in val_loader:
+            for images,_ in val_loader:
                 images = images.to(device)
                 reconstructed = model(images)
                 loss = criterion(reconstructed, images)
