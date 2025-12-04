@@ -119,10 +119,8 @@ cv-team5-anomaly-detection/
 │   └── autoencoder/
 │       └── best_model_epoch_100.pth # Saved checkpoints for trained models
 │
-├── notebooks/
-│   ├── run.ipynb                    # Pipeline execution for development and experimentation
-│   └── demo.ipynb                   # Final demo notebook for presentation/submission
-│
+├── run.ipynb                    # Pipeline execution for development and experimentation
+├── demo.ipynb                   # Final demo notebook for presentation/submission
 ├── README.md
 └── requirements.txt
 ```
