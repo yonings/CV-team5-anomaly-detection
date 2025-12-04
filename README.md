@@ -326,6 +326,9 @@ Colab에서 다음 노트북을 실행합니다:
 ```bash
 notebooks/demo.ipynb
 ```
+다음은 데모 인터페이스 실행 시 나타나는 출력 예시입니다:
+
+![Demo](./assets/demo_A_sample.png)
 
 ---
 ## Future work
