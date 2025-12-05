@@ -12,7 +12,7 @@ echo "[INFO] BASE_DIR = $BASE_DIR"
 ########################################
 
 DATA_ZIP="$BASE_DIR/data.zip"
-DATA_URL="https://github.com/seo-1004/cv-team5-anomaly-detection/releases/download/v1.0/data_release.zip"
+DATA_URL="https://github.com/seo-1004/cv-team5-anomaly-detection/releases/download/v1.0/dataset.zip"
 
 echo "[INFO] Downloading dataset..."
 wget -O "$DATA_ZIP" "$DATA_URL"
@@ -34,7 +34,7 @@ MODEL_DIR="$BASE_DIR/checkpoints/autoencoder"
 mkdir -p "$MODEL_DIR"
 MODEL_FILE="best_model_epoch_100.pth"
 
-MODEL_URL="https://github.com/seo-1004/cv-team5-anomaly-detection/releases/download/v1/best_model_epoch_100.pth"
+MODEL_URL="https://github.com/seo-1004/cv-team5-anomaly-detection/releases/download/v1/model.zip"
 
 echo "[INFO] Downloading model..."
 echo "From: $MODEL_URL"
