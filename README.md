@@ -124,9 +124,9 @@ cv-team5-anomaly-detection/
 │   └── utils/
 │       └── image_io.py              # Image loading/saving utilities
 │
-├── checkpoints/
-│   └── autoencoder/
-│       └── best_model_epoch_100.pth # Saved checkpoints for trained models
+└── checkpoints/
+    └── autoencoder/
+        └── best_model_epoch_100.pth # Saved checkpoints for trained models
 
 ```
 
