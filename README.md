@@ -90,8 +90,7 @@ Autoencoder 기반 이상 탐지는 **정상 데이터만으로도 결함을 검
 
 ```bash
 cv-team5-anomaly-detection/
-├── setup.sh
-├── download_model.py
+├── download_model.sh
 ├── README.md
 ├── requirements.txt
 ├── run.ipynb                        # Pipeline execution for development and experimentation
