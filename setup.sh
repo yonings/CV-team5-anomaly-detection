@@ -7,24 +7,24 @@ set -e  # 에러 발생 시 즉시 종료
 BASE_DIR="$(pwd)"
 echo "[INFO] BASE_DIR = $BASE_DIR"
 
+
 ########################################
 # 데이터 다운로드
 ########################################
-
 DATA_ZIP="$BASE_DIR/data.zip"
-DATA_URL="https://github.com/seo-1004/cv-team5-anomaly-detection/releases/download/v1.0/dataset.zip"
+DATA_URL="https://github.com/seo-1004/cv-team5-anomaly-detection/releases/download/v1.0/data.zip"
 
 echo "[INFO] Downloading dataset..."
 wget -O "$DATA_ZIP" "$DATA_URL"
 
 echo "[INFO] Extracting dataset..."
-mkdir -p "$BASE_DIR/data"
-unzip -o "$DATA_ZIP" -d "$BASE_DIR/data"
+unzip -o "$DATA_ZIP" -d "$BASE_DIR"
 
-rm "$DATA_ZIP"
+rm -f "$DATA_ZIP"
 
 echo "[INFO] Data download complete!"
 echo "[INFO] Data saved under: $BASE_DIR/data"
+
 
 ########################################
 # 모델 다운로드
@@ -44,6 +44,7 @@ wget -O "$MODEL_DIR/$MODEL_FILE" "$MODEL_URL"
 
 echo "[INFO] Model download complete!"
 echo "[INFO] Saved at: $MODEL_DIR/$MODEL_FILE"
+
 
 ########################################
 # Python 패키지 설치
