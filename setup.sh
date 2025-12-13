@@ -33,7 +33,7 @@ echo "[INFO] Data saved under: $BASE_DIR/data"
 MODEL_DIR="$BASE_DIR/checkpoints/autoencoder"
 mkdir -p "$MODEL_DIR"
 
-MODEL_ZIP="$MODEL_DIR/model.zip"
+MODEL_ZIP="$BASE_DIR/model.zip"
 MODEL_URL="https://github.com/seo-1004/cv-team5-anomaly-detection/releases/download/v1/model.zip"
 
 echo "[INFO] Downloading model zip..."
@@ -41,12 +41,12 @@ echo "From: $MODEL_URL"
 echo "To:   $MODEL_ZIP"
 wget -O "$MODEL_ZIP" "$MODEL_URL"
 
-echo "[INFO] Extracting model..."
-unzip -o "$MODEL_ZIP" -d "$MODEL_DIR"
+echo "[INFO] Extracting model to BASE_DIR..."
+unzip -o "$MODEL_ZIP" -d "$BASE_DIR"
 rm -f "$MODEL_ZIP"
 
 echo "[INFO] Model download complete!"
-echo "[INFO] Saved at: $MODEL_DIR/$MODEL_FILE"
+echo "[INFO] Saved at: $MODEL_DIR"
 
 
 ########################################
@@ -65,4 +65,3 @@ echo ""
 echo "=============================================="
 echo "[SETUP COMPLETE] All data & model are ready!"
 echo "=============================================="
-
