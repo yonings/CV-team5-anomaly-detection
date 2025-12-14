@@ -35,8 +35,7 @@ repository clone / 모델 다운로드 / 필요한 라이브러리 설치가 자
 4. [🔄 Pipeline Overview](#pipeline-overview)  
 5. [🛠️ How to Run](#how-to-run)  
 6. [📊 Evaluation & Visualization](#evaluation--visualization)  
-7. [🎛️ Demo](#demo)  
-8. [🚀 Future Work](#future-work)
+7. [🎛️ Demo](#demo) 
 
 ---
 
@@ -352,6 +351,4 @@ Colab에서 `demo.ipynb` 실행합니다:
 
 ![Demo](./assets/demo_A_sample.png)
 
----
-## Future work
 
