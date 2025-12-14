@@ -1,10 +1,9 @@
-<div align=center>
-   <h1>cv-team5-anomaly-detection</h1>
+<div align="center">
+  <h1>CV Team 5 – Anomaly Detection</h1>
 </div>
 
-Photometric Stereo(PS)로 얻은 Normal Map과 Autoencoder(AE)를 이용해  
-표면 결함을 **pixel-level anomaly map**으로 탐지하는 프로젝트입니다.
 
+Photometric Stereo(PS)로 얻은 Normal Map과 Autoencoder(AE)를 이용해 표면 결함을 **pixel-level anomaly map**으로 시각화하여 탐지하는 프로젝트입니다.
 
 ---
 ## 🚀 Easy Run (Google Colab)
@@ -15,6 +14,15 @@ repository clone / 모델 다운로드 / 필요한 라이브러리 설치가 자
 추가 명령어 입력 없이 바로 실행 가능합니다.
 
 (노트북 상단의 초기화 셀에 이미 포함되어 있음)
+
+### 📓 Notebooks
+- `run.ipynb`: 전체 파이프라인 실행용 기본 코드  
+- `demo.ipynb`: UI 기반 결과 확인 데모
+
+`assets/`에 데모 확인을 위한 **샘플 이미지(A/M/N 각 1장)** 가 포함되어 있으며, `demo.ipynb`에서 해당 샘플 이미지를 이용해 데모 동작을 간단히 확인할 수 있습니다.  
+
+전체 생성 이미지는 별도의 디렉토리에 포함되어 있습니다.
+
 
 ---
 
