@@ -4,7 +4,16 @@
 
 
 Photometric Stereo(PS)로 얻은 Normal Map과 Autoencoder(AE)를 이용해 표면 결함을 **pixel-level anomaly map**으로 시각화하여 탐지하는 프로젝트입니다.
+  
+### My Role
+- Implemented autoencoder architectures for anomaly detection
+- Conducted model experiments and robustness evaluations
+- Analyzed reconstruction loss behavior under real-world noise
 
+### Original Repository
+- https://github.com/team-repo-link (private / collaborator)
+
+  
 ---
 ## 🚀 Easy Run (Google Colab)
 
