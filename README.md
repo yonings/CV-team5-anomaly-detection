@@ -10,9 +10,6 @@ Photometric Stereo(PS)로 얻은 Normal Map과 Autoencoder(AE)를 이용해 표�
 - Conducted model experiments and robustness evaluations
 - Analyzed reconstruction loss behavior under real-world noise
 
-### Original Repository
-- https://github.com/team-repo-link (private / collaborator)
-
   
 ---
 ## 🚀 Easy Run (Google Colab)
